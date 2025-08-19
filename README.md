@@ -28,7 +28,7 @@ Two ingestion APIs allow you to store documents in **ChromaDB** using different 
 
 **Ingestion Process:**
 - **Document Loader**: Uses `pymupdf` for TXT/document parsing.  
-- **Chunking Strategy**: Fixed size chunks of **200 tokens** with **50 token overlap**.  
+- **Chunking Strategy**: Fixed size chunks of **100 tokens** with **50 token overlap**.  
 - **VectorStore**: Persistent client ensures embeddings are saved locally.  
 
 ---
