@@ -4,6 +4,7 @@ import json
 from openai import OpenAI
 from app.config import settings
 import time
+from typing import Literal
 
 client = OpenAI()
 
@@ -40,7 +41,7 @@ async def is_valid_json(response):
 
 
 class Metric(BaseModel):
-    better_model: str = Field(description="predict which embedding model retrieved the right chunks")
+    better_model: Literal["openai", "sentence_transformer"] = Field(description="predict which embedding model retrieved the right chunks")
 
 async def evaluation(query: str):
 
