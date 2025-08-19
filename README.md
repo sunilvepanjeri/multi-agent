@@ -84,4 +84,4 @@ After starting the server, visit **Swagger UI** (`http://0.0.0.0:8000/docs`) to 
 
 ### 1. Clone the repo
 ```bash
-git clone https://github.com/sunilvepanjeri/agent.git
+git clone https://github.com/sunilvepanjeri/multi-agent.git
